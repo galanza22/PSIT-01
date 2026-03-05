@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HealingHarbor | hospital & about us</title>
+  <title>HealingHarbor | University Hospital</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,107 +14,48 @@
         <div class="logo-text">HealingHarbor<span>care & compassion</span></div>
       </div>
       
-      <!-- pure CSS radio button selection for about us and hospital -->
-      <div class="selector-tabs">
-        <input type="radio" name="section" id="tab-about" checked>
-        <input type="radio" name="section" id="tab-hospital">
-        
-        <div class="tab-labels">
-          <label for="tab-about" class="tab-label about-label">ABOUT US</label>
-          <label for="tab-hospital" class="tab-label hospital-label">HOSPITAL</label>
-        </div>
-      </div>
+      <!-- navigation links to separate HTML files -->
+      <nav class="nav-links">
+        <a href="about.html" class="nav-link">ABOUT US</a>
+        <a href="hospital.html" class="nav-link">HOSPITAL</a>
+      </nav>
     </div>
   </header>
 
   <main class="main-content">
-    <!-- ABOUT US section (controlled by radio) -->
-    <section id="aboutSection" class="content-section about-section">
-      <div class="section-card">
-        <h2>🏥 About HealingHarbor</h2>
-        <p class="intro">For over three decades, HealingHarbor has stood as a beacon of hope and healing. What began as a small community clinic in 1989 has blossomed into a multi-specialty tertiary care hospital trusted by thousands of families.</p>
+    <!-- Home/Welcome section -->
+    <section class="content-section welcome-section">
+      <div class="welcome-card">
+        <h1>welcome to HealingHarbor</h1>
+        <p class="subhead">your trusted medical destination</p>
         
-        <div class="feature-grid">
-          <div class="feature-item">
-            <span class="feature-icon">⭐</span>
-            <h3>excellence since 1989</h3>
-            <p>Pioneering patient‑first healthcare with cutting‑edge technology and deeply compassionate staff.</p>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">👥</span>
-            <h3>500+ specialists</h3>
-            <p>World‑class doctors, surgeons, and nurses — all dedicated to your well‑being.</p>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">🏆</span>
-            <h3>accredited & awarded</h3>
-            <p>NABH accreditation, healthcare excellence awards, and ranked among top 10 hospitals regionally.</p>
-          </div>
+        <div class="hero-banner">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='300' viewBox='0 0 800 300'%3E%3Crect width='800' height='300' fill='%23348b9c'/%3E%3Ccircle cx='200' cy='150' r='60' fill='%23ffffff' opacity='0.2'/%3E%3Ccircle cx='400' cy='150' r='80' fill='%23ffffff' opacity='0.2'/%3E%3Ccircle cx='600' cy='150' r='60' fill='%23ffffff' opacity='0.2'/%3E%3Ctext x='400' y='180' font-family='Arial' font-size='48' fill='%23ffffff' text-anchor='middle'%3E🏥%3C/text%3E%3C/svg%3E" alt="Hospital banner" class="banner-img">
         </div>
-
-        <div class="values-box">
-          <h3>our core values</h3>
-          <ul>
-            <li><strong>Empathy</strong> — we treat every patient like family.</li>
-            <li><strong>Innovation</strong> — constantly adopting modern medicine.</li>
-            <li><strong>Integrity</strong> — transparent, ethical care.</li>
-          </ul>
+        
+        <div class="pill-selector-hint">
+          <span class="pill">ABOUT US</span>
+          <span class="pill">HOSPITAL</span>
         </div>
-
-        <p class="signature">— HealingHarbor management</p>
-      </div>
-    </section>
-
-    <!-- HOSPITAL section (controlled by radio) -->
-    <section id="hospitalSection" class="content-section hospital-section">
-      <div class="section-card">
-        <h2>🏥 our hospital & services</h2>
-        <p class="intro">HealingHarbor Medical Center is a 350‑bed facility designed for holistic healing — from emergency care to wellness programs. Everything under one roof.</p>
-
-        <div class="department-showcase">
-          <div class="dept-card">
-            <span class="dept-icon">🚑</span>
-            <h3>24/7 emergency & trauma</h3>
-            <p>Level‑1 trauma center with rapid response team and helipad for critical transfers.</p>
-          </div>
-          <div class="dept-card">
-            <span class="dept-icon">🫀</span>
-            <h3>cardiology & heart institute</h3>
-            <p>Open‑heart surgeries, interventional cardiology, and preventive heart programs.</p>
-          </div>
-          <div class="dept-card">
-            <span class="dept-icon">🧠</span>
-            <h3>neuroscience centre</h3>
-            <p>Stroke unit, brain surgery, and advanced neuroimaging (3T MRI, CT).</p>
-          </div>
-          <div class="dept-card">
-            <span class="dept-icon">👶</span>
-            <h3>mother & child care</h3>
-            <p>Modern NICU, high‑risk pregnancy, and paediatric superspecialty.</p>
-          </div>
-          <div class="dept-card">
-            <span class="dept-icon">🦴</span>
-            <h3>orthopaedics & joint replacement</h3>
-            <p>Robotic‑assisted knee/hip replacement, sports injury clinic.</p>
-          </div>
-          <div class="dept-card">
-            <span class="dept-icon">🔬</span>
-            <h3>diagnostics & imaging</h3>
-            <p>Fully digital lab, 1.5T MRI, 128‑slice CT, and PET‑CT.</p>
-          </div>
+        
+        <p class="info-text">Please select <strong>ABOUT US</strong> or <strong>HOSPITAL</strong> from the navigation above to learn more about our facilities and history.</p>
+        
+        <div class="quick-info-grid">
+          <div class="info-box">🌟 24/7 emergency services</div>
+          <div class="info-box">📞 +1 (800) 234-5678</div>
+          <div class="info-box">📍 123 Wellness Avenue</div>
+          <div class="info-box">⏰ Open 365 days</div>
         </div>
-
-        <div class="facility-highlight">
-          <p><strong>✨ special features:</strong> paperless records · telemedicine · international patient desk · pharmacy · cafeteria · meditation garden</p>
+        
+        <div class="cta-box">
+          <p>Click on the buttons above to explore</p>
         </div>
-
-        <p class="signature">— always here for you</p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2025 HealingHarbor Hospital — pure html & css demo | click buttons above to switch</p>
+    <p>© 2025 HealingHarbor Hospital — multi-page website | HTML & CSS only</p>
   </footer>
 </body>
 </html>
